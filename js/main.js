@@ -4,7 +4,7 @@ let age = parseInt (prompt("Quanti anni hai?"));
 let price = kmToGo * 0.21;
 
 if(age < 18){
-    price = (kmToGo * 0.21) - (20 * price/100);
+    price = price - (20 * price/100);
 }
 else if (age > 65){
   price = price - (40 * price /100);}
