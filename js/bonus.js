@@ -1,8 +1,9 @@
-let kmToGo = prompt("quanti km devi percorrere?");
-let age = parseInt (prompt("Quanti anni hai?"));
+function submitForm(event){
+    event.preventDefault(); 
+    let kmToGo = parseInt(document.getElementById("inputKm").value);
+let age = parseInt(document.getElementById("inputeta").value);
 
-let price = kmToGo * 0.21;
-
+let price = Math.floor(kmToGo * 0.21);
 if(age < 18){
     price = price - (20 * price/100);
 }
@@ -10,4 +11,8 @@ else if (age > 65){
   price = price - (40 * price /100);}
 
 
-console.log(price);
+document.getElementById("risultato").innerHTML= "Il prezzo è " + price;
+
+
+
+}

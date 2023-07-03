@@ -14,24 +14,17 @@
     
    <div class="container font_family bg-dark-subtle"> 
     
-    <div class="row g-5 text-center ">
+    <div class="row g-5 text-center " >
         <h2>Calcola il prezzo del tuo biglietto del treno</h2>
     </div>
-<form> 
+<form id="myForm" onsubmit="submitForm(event)" > 
     <div class="row g-2 text-start" style="font-size: large;">
-    <div class="col-3">
-    <label for="inputNome" class="form-label">Nome</label>
-    <input type="nome" class="form-control" id="inputNome">
-    </div>
-    <div class="col-3">
-        <label for="inputCognome" class="form-label">Cognome</label>
-        <input type="cognome" class="form-control" id="inputCognome">
-    </div>
-    <div class="col-3">
+   
+ <div class="col-4">
         <label for="inputKm" class="form-label">Km da percorrere</label>
         <input type="km" class="form-control" id="inputKm">
     </div>
-    <div class="col-3">
+    <div class="col-4">
         <label for="inputEta" class="form-label">Età</label>
         <input type="eta" class="form-control" id="inputeta">
     </div>
@@ -43,10 +36,12 @@
 </div>
 </div>
 
+<div id="risultato" class="mt-2">
+    <p id="price"></p>
+</div>
+    
+
 </form>
-
-
-
 
 
 
