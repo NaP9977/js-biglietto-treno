@@ -10,9 +10,14 @@ if(age < 18){
 else if (age > 65){
   price = price - (40 * price /100);}
 
-
-document.getElementById("risultato").innerHTML= "Il prezzo è " + price;
-
-
-
+  document.getElementById("price").textContent = "Il prezzo è " + price;
 }
+
+ function submitFormS(event){
+    event.preventDefault(); 
+    let name = document.getElementById("inputNome");
+    let cognome = document.getElementById("inputCognome");
+    
+
+
+ }
